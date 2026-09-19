@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caja</title>
+    <style>
+        body{
+            background-color: #c7926c;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        tittle{
+            color: white;
+        }
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #6c4f3d;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Caja</h1>
+
+        <input type="text" id="producto" placeholder="Producto">
+        <input type="number" id="precio" placeholder="Precio">
+
+        <button onclick="agregarPedido()">Agregar</button>
+
+        <h2>Pedidos</h2>
+
+        <div id="lista"></div>
+
+        <h2>Total: $<span id="total">0</span></h2>
+
+        <script src="coffeecode.js"></script>
+
+    </div>
+</body>
+</html>
