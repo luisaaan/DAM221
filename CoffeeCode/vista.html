@@ -93,17 +93,12 @@
                     </table>
                 </div>
             </div>
-
-            <div class="seccion" style="margin-top: 20px;">
-                <h2>Pedidos Realizados</h2>
-                <div id="listaPedidos" class="pedidos-container"></div>
-            </div>
         </div>
 
         <div class="column">
             <div class="seccion">
-                <h2>Menú del Cliente (Dinamico)</h2>
-                <div id="menuCliente" class="menu-grid"></div>
+                <h2>Menú del Cliente (Dinámico)</h2>
+                <div id="menuDinamico" class="menu-grid"></div>
             </div>
 
             <div class="seccion" style="margin-top: 20px;">
@@ -120,30 +115,49 @@
         
         <div class="column">
                
-            
-            <div class="seccion"">
+            <div class="seccion">
                 <h2>Carrito y Caja Registradora</h2>
+
                 <div id="carrito" class="carrito-container"></div>
-                
+
                 <div class="total-box">
-                    <p>Subtotal: $<span id="subtotal">0.00</span></p>
-                    <p>IVA (16%): $<span id="iva">0.00</span></p>
-                    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+                    <p>
+                        Subtotal: $<span id="subtotal">0.00</span>
+                    </p>
+
+                    <p>
+                        IVA (16%): $<span id="iva">0.00</span>
+                    </p>
+
+                    <p>
+                        <strong>
+                            Total: $<span id="total">0.00</span>
+                        </strong>
+                    </p>
                 </div>
-                
-                <button type="button" onclick="hacerPedido()" class="confirmar">Confirmar Pedido</button>
+
+                <button
+                    type="button"
+                    onclick="hacerPedido()"
+                    class="confirmar"
+                >
+                    Confirmar Pedido
+                </button>
+            </div>
+            
+            <div class="seccion" style="margin-top: 20px;">
+                <h2>Pedidos Realizados</h2>
+                <div id="listaPedidos" class="pedidos-container"></div>
             </div>
 
             <div class="seccion" style="margin-top: 20px;">
-                <h2>Estado del pedido</h2>
-                <div style="width: 100%; background: #eee; height: 10px; border-radius: 5px; margin-top: 10px; overflow: hidden;">
-                    <div id="barraProgreso" style="width: 0%; height: 100%; background: #28a745; transition: width 0.5s ease;"></div>
-                </div>
-                <p id="textoEstado" style="font-weight: bold; margin-top: 10px; color: #333;">Estado: Iniciando...</p>
+                <h2>Estados de los pedidos</h2>
+                <div id="listaEstados"></div>
             </div>
         </div>
     </div>
-    
-    <script src="coffeecode.js"></script>
+    <script src="cocina.js"></script>
+    <script src="cliente.js"></script>
+    <script src="caja.js"></script>
 </body>
 </html>
